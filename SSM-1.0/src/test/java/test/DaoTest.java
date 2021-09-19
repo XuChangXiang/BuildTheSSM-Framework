@@ -24,6 +24,7 @@ public class DaoTest {
 
     @Test
     public void run1(){
+
         RentExample rentExample = new RentExample();
 
         RentExample.Criteria criteria = rentExample.createCriteria();
