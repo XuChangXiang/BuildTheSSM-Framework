@@ -18,14 +18,10 @@ import java.util.List;
 //值是String数组，可以写多个xml配置文件
 @ContextConfiguration(locations = {"classpath:spring.xml"})
 public class DaoTest {
-    @Autowired
-    AreasMapper areasMapper;
+
     @Autowired
     RentMapper rentMapper;
-    @Autowired
-    StreetsMapper streetsMapper;
-    @Autowired
-    UsersMapper usersMapper;
+
     @Test
     public void run1(){
         RentExample rentExample = new RentExample();
